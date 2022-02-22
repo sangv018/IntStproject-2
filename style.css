@@ -1,0 +1,50 @@
+body {
+    height: 200px;
+    /* background-color: red; For browsers that do not support gradients */
+    background-color: rgb(47, 47, 47);
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+#one {
+        font-size: 32px;
+        background: -webkit-linear-gradient(rgb(41, 41, 41), rgb(243, 243, 243), rgb(41, 41, 41));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: justify;
+        padding-top: 350px;
+        font-family:'Courier New', Courier, monospace;
+}
+
+#title {
+    font-size: 42px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 6em;
+    /* Fallback: Set a background color. */
+    background-color: rgb(78, 77, 77);
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, #383838, #eceaea);
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 350px;
+}
+
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid rgb(204, 33, 33);
+	border-bottom: 25px solid transparent;
+    position:relative; 
+    left:1310px; 
+    top:50px;
+}
