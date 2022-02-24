@@ -6,7 +6,7 @@ body {
     padding-left: 30px;
   }
 
-#one {
+#textbox {
         font-size: 32px;
         background: -webkit-linear-gradient(rgb(41, 41, 41), rgb(243, 243, 243), rgb(41, 41, 41));
         -webkit-background-clip: text;
@@ -14,6 +14,7 @@ body {
         text-align: justify;
         padding-top: 350px;
         font-family:'Courier New', Courier, monospace;
+        position: absolute;
 }
 
 #title {
@@ -44,7 +45,8 @@ body {
 	border-top: 25px solid transparent;
 	border-right: 50px solid rgb(204, 33, 33);
 	border-bottom: 25px solid transparent;
-    position:relative; 
-    left:1310px; 
-    top:50px;
+    position:fixed; 
+    right:0px; 
+    top:50%;
+    z-index: 100;
 }

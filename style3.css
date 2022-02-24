@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "amatic";
+    src: url(fonts/Amatic_SC/AmaticSC-Regular.ttf);
+  }
+  
+  body {
+    /* height: 200px; */
+    /* background-color: red; For browsers that do not support gradients */
+    background-image: linear-gradient( rgb(97, 2, 0), rgb(184, 3, 3), rgb(255, 12, 12));
+    /* padding-right: 40px;
+    padding-left: 40px; */
+    height: 1650px;
+  }
+  
+  #textbox {
+        font-size: 72px;
+        /* background: -webkit-linear-gradient(rgb(41, 41, 41), rgb(243, 243, 243), rgb(41, 41, 41));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+        text-align: justify;
+        padding-top: 420px;
+        font-family:"amatic";
+        position: absolute;
+        padding-left: 80px;
+        padding-right: 80px;
+  }
+  
+  #title {
+    /* font-size: 32px; */
+    font-family:"amatic";
+    font-weight: normal;
+    font-size: 18em;
+    /* Fallback: Set a background color. */
+    background-color: rgb(78, 77, 77);
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, #fffbfb, #ffffff);
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 220px;
+  }
+  
+  .triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 50px solid rgb(255, 255, 255);
+  border-bottom: 25px solid transparent;
+    position:fixed; 
+    right:0px; 
+    top:50%;
+    z-index: 100;
+  }
