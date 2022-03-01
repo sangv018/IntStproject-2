@@ -1,7 +1,7 @@
 function wheel() {
     var text =  document.getElementById('textbox');
     console.log(text);
-    var increment = -200;
+    var increment = -400;
     var basevalue = parseInt(text.style.top);
     console.log("base = " + basevalue);
     var newvalue = (increment + basevalue) + "px";
@@ -23,7 +23,7 @@ function randomPick() {
 function wheel() {
     var text =  document.getElementById('textbox');
     console.log(text);
-    var increment = -400;
+    var increment = -100;
     var basevalue = parseInt(text.style.top);
     console.log("base = " + basevalue);
     var newvalue = (increment + basevalue) + "px";
