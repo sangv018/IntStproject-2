@@ -9,16 +9,18 @@
   }
   a#circle {
   display: block;
-  height: 100px;
+  height: 150px;
   width: 50px;
   position:fixed;
+  margin-left: -40px;
   }
   
   div.dot {
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
   position:fixed;
   display: inline-block;
+  margin-left: -30px;
   }
 }
 
@@ -28,9 +30,10 @@
   }
   a#circle {
   display: block;
-  height: 35px;
-  width: 35px;
+  height: 45px;
+  width: 45px;
   position:fixed;
+  margin-left: -30px;
   }
   
   div.dot {
@@ -38,6 +41,7 @@
   width: 35px;
   position:fixed;
   display: inline-block;
+  margin-left: -25px;
   }
 }
 
@@ -50,6 +54,7 @@
   height: 25px;
   width: 25px;
   position:fixed;
+  margin-left: -20px;
   }
 
   div.dot {
@@ -57,7 +62,12 @@
   width: 20px;
   position:fixed;
   display: inline-block;
+  margin-left: -15px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -66,6 +76,7 @@ body {
     background-color: rgb(26, 26, 26);
     padding-right: 30px;
     padding-left: 30px;
+    /* scroll-behavior: smooth; */
   }
 
 
@@ -75,7 +86,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: justify;
-    padding-top: 350px;
+    padding-top: 400px;
     font-family:"barriecito";
     position: absolute;
     padding-left: 80px;
@@ -85,6 +96,8 @@ body {
     background-attachment: fixed;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    z-index: -50;
+    transition: top 0.5s ease;
 }
 
 #title {
@@ -106,7 +119,13 @@ body {
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 5vh;
+}
+
+.heading {
+  background-color: rgb(26, 26, 26);
+  padding-bottom: 50px;
+  
 }
 
 .triangle-left {
@@ -131,8 +150,8 @@ body {
 }
 
 .dot {
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -140,6 +159,18 @@ body {
   background-color: greenyellow;
   margin-top: 650px;
   position:fixed;
+}
+
+.name {
+  color: white;
+  font-family:"barriecito";
+  font-weight: normal;
+  font-size: 13em;
+}
+
+.glow-button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgb(255, 255, 255);
 }
 
 /* #myBtn {

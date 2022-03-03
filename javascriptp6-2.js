@@ -1,12 +1,3 @@
-// history.scrollRestoration = "manual";
-// window.onbeforeunload = function () {
-//     window.scrollTo(0,0);
-// };
-
-// window.onload = function() {
-//     console.log(window.scrollTop);
-// }
-
 function wheel() {
     var text =  document.getElementById('textbox');
     console.log(text);
@@ -17,7 +8,7 @@ function wheel() {
     if(basevalue<=-12100)     
         {newvalue = 0};
     document.getElementById('textbox').style.setProperty("top", newvalue);
-    document.getElementById('textbox').style.transition = "top 0.5s ease";
+    document.getElementById('textbox').style.transition = "top 1.5s ease";
 }
 
 function randomPick() {
@@ -42,27 +33,5 @@ function wheel2() {
     if(basevalue<=-8700)     
         {newvalue = 0};
     document.getElementById('textbox').style.setProperty("top", newvalue);
-    document.getElementById('textbox').style.transition = "top 1.5s ease";
+    document.getElementById('textbox').style.transition = "top 2.5s ease";
 }
-
-
-
-// //Get the button
-// var mybutton = document.getElementById("myBtn");
-
-// // When the user scrolls down 20px from the top of the document, show the button
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     mybutton.style.display = "block";
-//   } else {
-//     mybutton.style.display = "none";
-//   }
-// }
-
-// // When the user clicks on the button, scroll to the top of the document
-// function topFunction() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }

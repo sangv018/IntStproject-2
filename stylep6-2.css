@@ -1,0 +1,198 @@
+@font-face{
+    font-family: "barriecito";
+    src: url(fonts/Barriecito/Barriecito-Regular.ttf);
+    }
+  
+  @media screen and (min-width: 600px) {
+    div#textbox {
+    font-size: 42px;
+    }
+    a#circle {
+    display: block;
+    height: 150px;
+    width: 50px;
+    position:fixed;
+    margin-left: -40px;
+    }
+    
+    div.dot {
+    height: 100px;
+    width: 100px;
+    position:fixed;
+    display: inline-block;
+    margin-left: -30px;
+    }
+  }
+  
+  @media screen and (width: 400px) {
+    div#textbox {
+    font-size: 36px;
+    }
+    a#circle {
+    display: block;
+    height: 45px;
+    width: 45px;
+    position:fixed;
+    margin-left: -30px;
+    }
+    
+    div.dot {
+    height: 35px;
+    width: 35px;
+    position:fixed;
+    display: inline-block;
+    margin-left: -25px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    div#textbox {
+    font-size: 20px;
+    }
+    a#circle {
+    display: block;
+    height: 25px;
+    width: 25px;
+    position:fixed;
+    margin-left: -20px;
+    }
+  
+    div.dot {
+    height: 20px;
+    width: 20px;
+    position:fixed;
+    display: inline-block;
+    margin-left: -15px;
+    }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+      height: 200px;
+      /* background-color: red; For browsers that do not support gradients */
+      background-color: rgb(26, 26, 26);
+      padding-right: 30px;
+      padding-left: 30px;
+      /* scroll-behavior: smooth; */
+    }
+  
+  
+    #textbox {
+      font-size: 42px;
+      /* background: -webkit-linear-gradient(rgb(41, 41, 41), rgb(243, 243, 243), rgb(41, 41, 41)); */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: justify;
+      padding-top: 400px;
+      font-family:"barriecito";
+      position: absolute;
+      padding-left: 80px;
+      padding-right: 80px;
+      background-image: linear-gradient(black, white, black);
+      background-size: cover;
+      background-attachment: fixed;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      z-index: -50;
+      transition: top 0.5s ease;
+  }
+  
+  #title {
+      /* font-size: 42px; */
+      font-family:"barriecito";
+      font-weight: normal;
+      font-size: 13em;
+      /* Fallback: Set a background color. */
+      background-color: rgb(78, 77, 77);
+      /* Create the gradient. */
+      background-image: linear-gradient(45deg, #383838, #eceaea);
+      /* Set the background size and repeat properties. */
+      background-size: 100%;
+      background-repeat: repeat;
+      /* Use the text as a mask for the background. */
+      /* This will show the gradient as a text color rather than element bg. */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      text-align: center;
+      padding-top: 5vh;
+  }
+  
+  .heading {
+    background-color: rgb(26, 26, 26);
+    padding-bottom: 50px;
+    
+  }
+  
+  .triangle-left {
+      width: 0;
+      height: 0;
+      border-top: 25px solid transparent;
+      border-right: 50px solid rgb(204, 33, 33);
+      border-bottom: 25px solid transparent;
+    position:fixed; 
+    right:0px; 
+    top:50%;
+    z-index: 100;
+  }
+  
+  #circle {
+    background-color: blueviolet;
+    display: block;
+    height: 100px;
+    width: 50px;
+    position:fixed;
+    z-index: 100;
+    left: 1430px; 
+  }
+  
+  .dot {
+    height: 100px;
+    width: 100px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 150;
+    background-color: greenyellow;
+    margin-top: 650px;
+    position:fixed;
+    left: 1430px; 
+  }
+  
+  .name {
+    color: white;
+    font-family:"barriecito";
+    font-weight: normal;
+    font-size: 13em;
+  }
+  
+  
+  /* #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  } */
+  
+  /* .choose {
+    background-color: rgb(116, 226, 43);
+    display: block;
+    height: 100px;
+    width: 100px;
+    position:fixed;
+    margin-left: 100px; 
+    z-index: 100; 
+  } */
