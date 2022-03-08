@@ -10,14 +10,14 @@
 function wheel() {
     var text =  document.getElementById('textbox');
     console.log(text);
-    var increment = +200;
+    var increment = -200;
     var basevalue = parseInt(text.style.top);
     console.log("base = " + basevalue);
     var newvalue = (increment + basevalue) + "px";
     if(basevalue<=-12100)     
         {newvalue = 0};
-    document.getElementById('textbox').style.setProperty("top", newvalue);
-    document.getElementById('textbox').style.transition = "top 0.5s ease";
+    text.style.setProperty("top", newvalue);
+    text.style.transition = "top 0.5s ease";
 }
 
 function randomPick() {
@@ -41,8 +41,8 @@ function wheel2() {
     var newvalue = (increment + basevalue) + "px";
     if(basevalue<=-8700)     
         {newvalue = 0};
-    document.getElementById('textbox').style.setProperty("top", newvalue);
-    document.getElementById('textbox').style.transition = "top 1.5s ease";
+    text.style.setProperty("top", newvalue);
+    text.style.transition = "top 1.5s ease";
 }
 
 
@@ -61,8 +61,9 @@ function wheel2() {
 //   }
 // }
 
-// // When the user clicks on the button, scroll to the top of the document
-// function topFunction() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  document.getElementById("textbox").style.top = "0px";
+}
